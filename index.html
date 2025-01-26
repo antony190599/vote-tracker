@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Vote Tracker</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./images/vote_tracker_logo.png" alt="Logo">
+        </div>
+        <nav class="nav-buttons">
+            <button class="nav-button">Productos</button>
+            <button class="nav-button">Estadísticas</button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="products-container">
+            <article class="product-card" onclick="selectProduct(this)">
+                <img src="images/game_boy_color.png" alt="game_boy_color">
+                <h3 class="product-title">Game Boy Color</h3>
+                <p class="product-description">Una consola portátil retro y colorida.</p>
+            </article>
+            <article class="product-card" onclick="selectProduct(this)">
+                <img src="images/ipod_classic.png" alt="ipod_classic">
+                <h3 class="product-title">iPod Classic</h3>
+                <p class="product-description">El dispositivo que revolucionó la música portátil.</p>
+            </article>
+            <article class="product-card" onclick="selectProduct(this)">
+                <img src="images/playstation_2.png" alt="playstation_2">
+                <h3 class="product-title">PlayStation 2</h3>
+                <p class="product-description">La consola más vendida de todos los tiempos.</p>
+            </article>
+        </section>
+        <button class="vote-button" onclick="registerVote()" disabled>Registrar Voto</button>
+        
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Vote Tracker</p>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
